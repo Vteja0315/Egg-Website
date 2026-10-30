@@ -1,0 +1,24 @@
+/* Base Styling & Custom 3D Layering */
+html.lenis {
+  height: auto;
+}
+.lenis-smooth {
+  scroll-behavior: initial !important;
+}
+.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+
+/* White Egg Base State */
+#interactive-egg {
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #f4f0ea 45%, #dbd3c5 75%, #bfae99 100%);
+}
+
+/* Speckle Overlay Pattern */
+#egg-speckles {
+  background-image: 
+    radial-gradient(rgba(102, 66, 41, 0.15) 1px, transparent 0),
+    radial-gradient(rgba(122, 80, 50, 0.12) 1.5px, transparent 0);
+  background-size: 16px 16px, 24px 24px;
+  background-position: 0 0, 8px 12px;
+}
